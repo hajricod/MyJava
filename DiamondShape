@@ -1,0 +1,49 @@
+public class DiamondShape{
+
+     public static void main(String []args){
+     
+       testDiamondShapeString();
+     }
+    
+    public static void testDiamondShapeString() {
+        
+        String s = "Ahmed Salim Alhajri";
+        
+        triangleTop(s);
+    }
+    
+    public static void triangleTop(String s) {
+        
+        
+        for(int k=1; k <= s.length(); k++) {
+            
+            for(int i = k; i < s.length(); i++) {
+                System.out.print(" ");
+            }
+            
+            System.out.print(s.substring(0, k));
+            System.out.print(" ");
+            System.out.print(s.substring(0, k));
+            System.out.println();
+        }
+        
+        triangleBottom(s);
+    }
+    
+    public static void triangleBottom(String s) {
+        
+        for(int k = s.length()-1; k >= 0; k--){
+            
+            for(int i = k; i < s.length(); i++) {
+                System.out.print(" ");
+            }
+            
+            System.out.print(s.substring(0, k));
+            System.out.print(" ");
+            System.out.print(s.substring(0, k));
+            System.out.println();
+        }
+        
+    }
+    
+}
