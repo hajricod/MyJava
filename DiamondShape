@@ -34,7 +34,7 @@ public class DiamondShape{
         
         for(int k = s.length()-1; k >= 0; k--){
             
-            for(int i = k; i < s.length(); i++) {
+            for(int i = k; i < s.length() && i != 0; i++) {
                 System.out.print(" ");
             }
             
